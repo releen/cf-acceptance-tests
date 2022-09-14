@@ -47,7 +47,7 @@ import (
 	. "github.com/onsi/gomega/gexec"
 )
 
-const minCliVersion = "6.33.1"
+const minCliVersion = "8.5.0"
 
 func TestCATS(t *testing.T) {
 	RegisterFailHandler(Fail)
