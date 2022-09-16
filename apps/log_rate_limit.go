@@ -6,8 +6,10 @@ import (
 	"time"
 
 	. "github.com/cloudfoundry/cf-acceptance-tests/cats_suite_helpers"
+	"github.com/cloudfoundry/cf-test-helpers/cf"
+	"github.com/cloudfoundry/cf-test-helpers/helpers"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gbytes"
 	. "github.com/onsi/gomega/gexec"
@@ -16,8 +18,6 @@ import (
 	"github.com/cloudfoundry/cf-acceptance-tests/helpers/assets"
 	logshelper "github.com/cloudfoundry/cf-acceptance-tests/helpers/logs"
 	"github.com/cloudfoundry/cf-acceptance-tests/helpers/random_name"
-	"github.com/cloudfoundry/cf-test-helpers/v2/cf"
-	"github.com/cloudfoundry/cf-test-helpers/v2/helpers"
 )
 
 var _ = AppsDescribe("log rate limit", func() {
